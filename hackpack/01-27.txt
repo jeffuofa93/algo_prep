@@ -1,0 +1,22 @@
+Update:
+Yesterday 01/27
+Focused on tree problems. 
+Leetcode 1104 - Path in zig zag tree - Failed 
+  Their was a math trick I didn't get when exploring this problem seemed difficult to do without it 
+  The value of the parent of the current position = max val on level + min_val on level - label  // 2 
+Leetcode 314 Vertical Order Traversal - light pass/fail 
+  Had the intutition for the problem right away but my mistake is I traversed the tree with DFS instead of BFS 
+  which caused misordering for items in same vertical column 
+Leetcode 1650 Lowest Common Ancestor of Binary Tree - strong pass 
+Leetcode 266 Find leaves of a binary tree - fail 
+  Reached identical approach to optimal solution but was doing it in two separate functions where I calculated 
+  the height of each node instead of doing the height and adding the leaves in one pass 
+
+Github:
+Got started working on a project to learn typescript with React I'm familiar with JS but haven't 
+used typescript. I have an idea for a personal project I want to take a stab at where it's a website 
+that has all the gambling lines for major sports events and allows user to "bet" against their friends
+it wouldn't use actual money it would just be points or coins in the site but I wonder if that would look 
+bad on a resume because of the gambling piece? Idk 
+
+

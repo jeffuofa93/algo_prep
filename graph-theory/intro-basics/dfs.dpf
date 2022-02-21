@@ -1,0 +1,23 @@
+<h1 id="depth-first-search">Depth First Search</h1>
+<ul>
+<li>DFS fundamental graph search algorithm with complexity of O(V+E)</li>
+<li>By itself it’s not that useful can be augmented to perform other tasks such as count connected components, determine connectivity or find bridges/articulation points</li>
+</ul>
+<h2 id="basic-dfs">Basic DFS</h2>
+<ul>
+<li>We pick a start node, mark the start node as visited and recursively visit nodes that have not been visited yet</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># n = number of nodes in the graph </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># g = adjaceny list representing graph</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>visited <span class="op">=</span> [<span class="va">False</span> <span class="op">*</span> n]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>function dfs(node):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> visited[node]:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    visited[node] <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  neighbors <span class="op">=</span> g[node]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="bu">next</span> <span class="kw">in</span> neighbors:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    dfs(<span class="bu">next</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># start dfs at node 0 </span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>start_node <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>dfs(start_node)</span></code></pre></div>

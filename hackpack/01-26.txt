@@ -1,0 +1,9 @@
+Yesterday:
+I met with Dan to get my study plan together and work through the topics to solidify my understanding. My
+first topic I'm focusing on is trees I completed leetcode problem 103 zig zag level order traversal which I completed
+naively by reversing the level for every odd list where the optimal solution adds to alternating sides of the queue 
+
+For my github I started to work on adding a logger to one of my existing personal projects 
+
+Today:
+Continue working through tree problems. 
