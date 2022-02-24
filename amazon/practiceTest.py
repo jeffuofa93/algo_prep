@@ -26,10 +26,10 @@ def ceiling(arr, target):
 x = [2, 3, 5, 9, 14, 16, 18]
 target = 8
 
-x = [2, 3, 5, 9, 14, 16, 18, 1, 2, 3, 4, 5, 6, 7, 8]
+z = [2, 3, 5]
 
 cX = Counter(x)
-dx = Counter(x)
+dx = Counter(z)
 y = cX - dx
 print(y)
 print(dx)

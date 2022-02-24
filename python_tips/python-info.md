@@ -92,3 +92,21 @@ def flattenDict(dictElement, separator="_", prefix=""):
         else {prefix: dictElement}
     )
 ```
+
+
+## Subtracting Counters 
+
+- We can subtract two counters and the result will be the keys in counter1 not in counter2
+
+```python
+ def countCharacters(self, words: List[str], chars: str) -> int:
+        c = Counter(chars)
+        return sum(len(x) for x in words if not Counter(x) - c)
+```
+
+- if not Counter(x) means that all elements of x and their values are in c
+
+
+## sortedcontainers for TreeMap/Treeset 
+
+- 
